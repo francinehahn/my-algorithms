@@ -59,3 +59,6 @@ console.log(result2)
 
 const result3 = medianOfTwoArrays([1, 3, 7, 10], [4, 9, 10, 12]) //[1, 3, 4, 7, 9, 10, 10, 12]
 console.log(result3)
+
+const result4 = medianOfTwoArrays([1,3,5], [2,4,6]) //[1, 2, 3, 4, 5, 6]
+console.log(result4)
