@@ -23,6 +23,10 @@ Explanation: There is no way to make a positive profit, so we never buy the stoc
 */
 
 function profitFromStocks (array) {
+    if (typeof array !== "object") {
+        return "The input must be and array of numbers"
+    }
+
     let difference = 0
     let totalProfit = 0
 
@@ -31,6 +35,10 @@ function profitFromStocks (array) {
         let rounds = 1
 
         for (let j = i + 1; j < array.length; j++) {
+            if (typeof array[i] !== "number" || typeof array[j] !== "number") {
+                return "The input must be and array of numbers"
+            }
+
             if (difference <= array[j] - array[i]) {
                 difference = array[j] - array[i]
                 rounds++
@@ -71,3 +79,9 @@ console.log(result5)
 
 const result6 = profitFromStocks([3, 4, 6, 1, 10, 8, 2, 1]) //12
 console.log(result6)
+
+const result7 = profitFromStocks([3, 4, '6', 1, 10, 8, 2, 1]) //error
+console.log(result7)
+
+const result8 = profitFromStocks("hello") //error
+console.log(result8)
