@@ -18,6 +18,10 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 */
 
 function lengthOfLongestSubstring (string) {
+    if (typeof string !== "string") {
+        return "The input of the function must be a string."
+    }
+
     const arrayOfCharacters = string.split("")
     let substring = []
     let length = 0
@@ -71,3 +75,6 @@ console.log(result3)
 
 const result4 = lengthOfLongestSubstring("ovvokrskfghlm")
 console.log(result4)
+
+const result5 = lengthOfLongestSubstring(12345)
+console.log(result5)
