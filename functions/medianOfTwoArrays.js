@@ -13,6 +13,10 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 */
 
 function medianOfTwoArrays(arr1, arr2) {
+    if (typeof arr1 !== "object" || typeof arr2 !== "object") {
+        return "Both inputs must be arrays of numbers"
+    }
+
     let median
     const totalLength = arr1.length + arr2.length
     const isPar = totalLength % 2 === 0
@@ -23,6 +27,10 @@ function medianOfTwoArrays(arr1, arr2) {
     let cont = 0
     
     while (cont <= indexMedian) {
+        if (typeof arr1[i] !== "number" || typeof arr2[j] !== "number") {
+            return "Both inputs must be arrays of numbers"
+        }
+
         let currentNumber
 
         if (arr1[i] < arr2[j] || !arr2[j]) {
@@ -62,3 +70,12 @@ console.log(result3)
 
 const result4 = medianOfTwoArrays([1,3,5], [2,4,6]) //[1, 2, 3, 4, 5, 6]
 console.log(result4)
+
+const result5 = medianOfTwoArrays([1,3,5], ["hello",4,6]) //error
+console.log(result5)
+
+const result6 = medianOfTwoArrays("hello", [1,4,6]) //error
+console.log(result6)
+
+const result7 = medianOfTwoArrays([], [1,4,6]) //error
+console.log(result7)
