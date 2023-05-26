@@ -14,6 +14,10 @@ Output: 21
 */
 
 function reverseInteger (int) {
+    if (typeof int !== "number" || int % 1 !== 0) {
+        return "The input of the function must be an integer."
+    }
+
     const arrayOfNumbers = int.toString().split("")
     const reverseArray = []
 
@@ -45,3 +49,9 @@ console.log(result4)
 
 const result5 = reverseInteger(-10)
 console.log(result5)
+
+const result6 = reverseInteger(10.5) //error
+console.log(result6)
+
+const result7 = reverseInteger("hello") //error
+console.log(result7)
