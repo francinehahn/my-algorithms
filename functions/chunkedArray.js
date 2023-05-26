@@ -14,6 +14,13 @@ Explanation: The arr has been split into subarrays with 3 elements. However, onl
 */
 
 function chunkedArray (array, size, result = []) {
+    if (typeof array !== "object") {
+        return "You must provide an array of integers."
+    }
+    if (typeof size !== "number" || size % 1 !== 0) {
+        return "The size of the chunked array must be an integer."
+    }
+
     if (array.length === 0) {
         return result
     } else {
@@ -36,3 +43,6 @@ console.log(result4)
 
 const result5 = chunkedArray([], 1)
 console.log(result5)
+
+const result6 = chunkedArray([], 2.8)
+console.log(result6)
