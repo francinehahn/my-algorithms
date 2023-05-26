@@ -35,7 +35,7 @@ function profitFromStocks (array) {
         let rounds = 1
 
         for (let j = i + 1; j < array.length; j++) {
-            if (typeof array[i] !== "number" || typeof array[j] !== "number") {
+            if (typeof array[i] !== "number" || typeof array[j] !== "number" || array[i] % 1 !== 0 || array[j] % 1 !== 0) {
                 return "The input must be and array of numbers"
             }
 
@@ -85,3 +85,6 @@ console.log(result7)
 
 const result8 = profitFromStocks("hello") //error
 console.log(result8)
+
+const result9 = profitFromStocks([3, 4, 6.6, 1, 10, 8, 2, 1]) //error
+console.log(result9)
