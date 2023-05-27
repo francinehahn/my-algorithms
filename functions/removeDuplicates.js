@@ -19,11 +19,19 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 */
 
 function removeDuplicates(array) {
+    if (typeof array !== "object") {
+        return "The input must be and array of numbers"
+    }
+
     const result = []
     let k = 0
     let isEqual = false
 
     for (let i = 0; i < array.length; i++) {
+        if (typeof array[i] !== "number") {
+            return "The input must be and array of numbers"
+        }
+
         if (result.length === 0) {
             result.push(array[i])
         } else {
@@ -55,3 +63,9 @@ console.log(result2)
 
 const result3 = removeDuplicates([4, 4, 5, 6])
 console.log(result3)
+
+const result4 = removeDuplicates("hello") //error
+console.log(result4)
+
+const result5 = removeDuplicates([1, 8, 9, 'hello', 8, 5]) //error
+console.log(result5)

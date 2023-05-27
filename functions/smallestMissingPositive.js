@@ -19,6 +19,10 @@ Explanation: The smallest positive integer 1 is missing.
 */
 
 function smallestMissingPositive (array) {
+    if (typeof array !== "object") {
+        return "The input of the function must be an array of integers."
+    }
+
     const set = new Set(array)
     
     for (let i = 1; i < array.length; i++) {
@@ -41,3 +45,9 @@ console.log(result3)
 
 const result4 = smallestMissingPositive([1, 5, 4, 3, 2, 7, 6, 10, 11, 15, 13, 18, 20])
 console.log(result4)
+
+const result5 = smallestMissingPositive("hello") //error
+console.log(result5)
+
+const result6 = smallestMissingPositive(10) //error
+console.log(result6)
