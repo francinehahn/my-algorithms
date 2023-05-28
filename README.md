@@ -12,3 +12,4 @@ Repository that I use to practice the implementation of different algorithms in 
 - `Jump Game`: Given an integer array nums, you are initially positioned at the array's first index, and each element in the array
 represents your maximum jump length at that position. Return true if you can reach the last index, or false otherwise
 - `Substring with Concatenation of All Words`: Given a string and an array of strings, return the starting indices of all the concatenated substrings in the input string
+- `Valid Sudoku`: Determine if a 9 x 9 Sudoku board is valid
