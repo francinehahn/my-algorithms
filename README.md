@@ -15,3 +15,4 @@ represents your maximum jump length at that position. Return true if you can rea
 - `Valid Sudoku`: Determine if a 9 x 9 Sudoku board is valid
 - `Game Of Life`: Given a board made up of an m x n grid of cells, where each cell has an initial state - live (represented by a 1)
 or dead (represented by a 0) - and each cell interacts with its eight neighbors (horizontal, vertical, diagonal) following four rules, return the updated board
+- `Set Matrix Zeroes`: Given an m x n integer matrix, if an element is 0, set its entire row and column to 0's.
