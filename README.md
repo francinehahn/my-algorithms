@@ -13,3 +13,5 @@ Repository that I use to practice the implementation of different algorithms in 
 represents your maximum jump length at that position. Return true if you can reach the last index, or false otherwise
 - `Substring with Concatenation of All Words`: Given a string and an array of strings, return the starting indices of all the concatenated substrings in the input string
 - `Valid Sudoku`: Determine if a 9 x 9 Sudoku board is valid
+- `Game Of Life`: Given a board made up of an m x n grid of cells, where each cell has an initial state - live (represented by a 1)
+or dead (represented by a 0) - and each cell interacts with its eight neighbors (horizontal, vertical, diagonal) following four rules, return the updated board
