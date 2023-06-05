@@ -17,3 +17,4 @@ represents your maximum jump length at that position. Return true if you can rea
 or dead (represented by a 0) - and each cell interacts with its eight neighbors (horizontal, vertical, diagonal) following four rules, return the updated board
 - `Set Matrix Zeroes`: Given an m x n integer matrix, if an element is 0, set its entire row and column to 0's
 - `Group Anagrams`: Given an array of strings strs, group the anagrams together (do not use the split, the sort and the join methods)
+- `Factorial Trailing Zeroes`: Given an integer n, return the number of trailing zeroes in n!
