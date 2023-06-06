@@ -18,3 +18,4 @@ or dead (represented by a 0) - and each cell interacts with its eight neighbors 
 - `Set Matrix Zeroes`: Given an m x n integer matrix, if an element is 0, set its entire row and column to 0's
 - `Group Anagrams`: Given an array of strings strs, group the anagrams together (do not use the split, the sort and the join methods)
 - `Factorial Trailing Zeroes`: Given an integer n, return the number of trailing zeroes in n!
+- `Single Number`: Given an integer array where every element appears three times except for one, which appears exactly once, find the single element and return it
