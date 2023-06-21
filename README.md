@@ -20,3 +20,4 @@ or dead (represented by a 0) - and each cell interacts with its eight neighbors 
 - `Factorial Trailing Zeroes`: Given an integer n, return the number of trailing zeroes in n!
 - `Single Number`: Given an integer array where every element appears three times except for one, which appears exactly once, find the single element and return it
 - `Determine if Two Strings Are Close`: Given two strings, word1 and word2, return true if word1 and word2 are close, and false otherwise
+- `3Sum`: Given an integer array nums, return all the unique triplets [nums[i], nums[j], nums[k]] such that i !== j, i !== k, and j !== k, and nums[i] + nums[j] + nums[k] === 0
