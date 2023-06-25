@@ -21,3 +21,5 @@ or dead (represented by a 0) - and each cell interacts with its eight neighbors 
 - `Single Number`: Given an integer array where every element appears three times except for one, which appears exactly once, find the single element and return it
 - `Determine if Two Strings Are Close`: Given two strings, word1 and word2, return true if word1 and word2 are close, and false otherwise
 - `3Sum`: Given an integer array nums, return all the unique triplets [nums[i], nums[j], nums[k]] such that i !== j, i !== k, and j !== k, and nums[i] + nums[j] + nums[k] === 0
+- `Basic Calculator`: Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return 
+the result of the evaluation (cannot use the eval function)
