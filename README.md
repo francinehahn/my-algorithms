@@ -23,3 +23,5 @@ or dead (represented by a 0) - and each cell interacts with its eight neighbors 
 - `3Sum`: Given an integer array nums, return all the unique triplets [nums[i], nums[j], nums[k]] such that i !== j, i !== k, and j !== k, and nums[i] + nums[j] + nums[k] === 0
 - `Basic Calculator`: Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return 
 the result of the evaluation (cannot use the eval function)
+- `House Robber`: Given an integer array nums representing the amount of money of each house, return the maximum amount of 
+money you can rob tonight without alerting the police
