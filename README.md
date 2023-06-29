@@ -27,3 +27,4 @@ the result of the evaluation (cannot use the eval function)
 money you can rob tonight without alerting the police
 - `H Index`: Given an array of integers citations where citations[i] is the number of citations a researcher received 
 for their ith paper, return the researcher's h-index
+- `Selection Sort`: Given an array of integers, implement the selection sort algorithm
