@@ -28,3 +28,4 @@ money you can rob tonight without alerting the police
 - `H Index`: Given an array of integers citations where citations[i] is the number of citations a researcher received 
 for their ith paper, return the researcher's h-index
 - `Selection Sort`: Given an array of integers, implement the selection sort algorithm
+- `Linked List`: Implement a linked list with 3 different methods: add value, delete value and print list
